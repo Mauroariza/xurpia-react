@@ -2,12 +2,12 @@
 
 export default function MiEspacio() {
   return (
-    <div className="container mx-auto p-4 bg-gray-900 text-white">
+    <div className="container mx-auto p-4 bg-zinc-900 text-white">
       <div className="nav flex items-center justify-between mb-4">
         <button id="menuToggle" className="text-2xl">
           <i className="bx bx-menu" />
         </button>
-        <div className="search flex items-center bg-gray-800 p-2 rounded">
+        <div className="search flex items-center bg-zinc-800 p-2 rounded">
           <i className="bx bx-search text-xl mr-2" />
           <input
             type="text"
@@ -15,7 +15,7 @@ export default function MiEspacio() {
             className="bg-transparent outline-none text-white"
           />
         </div>
-        <div className="city flex items-center bg-gray-800 p-2 rounded ml-4">
+        <div className="city flex items-center bg-zinc-800 p-2 rounded ml-4">
           <i className="bx bxs-location-plus text-xl mr-2" />
           <input
             type="text"
@@ -23,7 +23,7 @@ export default function MiEspacio() {
             className="bg-transparent outline-none text-white"
           />
         </div>
-        <button className="ml-4 bg-teal-500 py-2 px-4 rounded hover:bg-teal-600">
+        <button className="ml-4 bg-zinc-800 py-2 px-4 rounded hover:bg-zinc-700">
           Buscar
         </button>
         <i className="bx bx-bell text-2xl ml-4" />
@@ -44,7 +44,7 @@ export default function MiEspacio() {
             <p className="text-gray-400">Aquí estarán tus grupos de trabajo</p>
           </div>
           <div className="job-cards grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="card bg-gray-800 p-4 rounded-lg shadow-lg">
+            <div className="card bg-zinc-800 p-4 rounded-lg shadow-lg">
               <div className="card-header flex items-center justify-between mb-4">
                 <div className="job-info flex items-center">
                   <img className="logoEmpresas w-12 h-12 rounded-full mr-4" src="../IMG/LOGOCHIQUITO.png" alt="Heeq" />
@@ -59,8 +59,8 @@ export default function MiEspacio() {
                 <i className="bx bx-bookmark-plus text-2xl" />
               </div>
               <div className="card-tags mb-4">
-                <a href="#" className="bg-teal-500 py-1 px-2 rounded mr-2">Empresa</a>
-                <a href="#" className="bg-teal-500 py-1 px-2 rounded">Principal</a>
+                <a href="#" className="bg-zinc-700 py-1 px-2 rounded mr-2">Empresa</a>
+                <a href="#" className="bg-zinc-700 py-1 px-2 rounded">Principal</a>
               </div>
               <div className="card-desc">
                 <p className="text-gray-300">
@@ -68,7 +68,7 @@ export default function MiEspacio() {
                 </p>
               </div>
             </div>
-            <div className="card bg-gray-800 p-4 rounded-lg shadow-lg">
+            <div className="card bg-zinc-800 p-4 rounded-lg shadow-lg">
               <div className="card-header flex items-center justify-between mb-4">
                 <div className="job-info flex items-center">
                   <img src="../IMG/icono.png" className="logoEmpresas w-12 h-12 rounded-full mr-4" alt="XURP IA" />
@@ -83,9 +83,9 @@ export default function MiEspacio() {
                 <i className="bx bx-bookmark-plus text-2xl" />
               </div>
               <div className="card-tags mb-4">
-                <a href="#" className="bg-teal-500 py-1 px-2 rounded mr-2">Empresa</a>
-                <a href="#" className="bg-teal-500 py-1 px-2 rounded mr-2">IA</a>
-                <a href="#" className="bg-teal-500 py-1 px-2 rounded">Chat</a>
+                <a href="#" className="bg-zinc-700 py-1 px-2 rounded mr-2">Empresa</a>
+                <a href="#" className="bg-zinc-700 py-1 px-2 rounded mr-2">IA</a>
+                <a href="#" className="bg-zinc-700 py-1 px-2 rounded">Chat</a>
               </div>
               <div className="card-desc">
                 <p className="text-gray-300">
