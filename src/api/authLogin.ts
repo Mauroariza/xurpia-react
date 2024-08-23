@@ -23,4 +23,4 @@ export const loginRequest =async(data:LoginData): Promise<LoginResponse> => {
     }catch{
         return Promise.reject('Error al iniciar sesión');
     }
-}
+} 
