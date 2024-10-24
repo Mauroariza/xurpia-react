@@ -5,7 +5,14 @@ export default {
   "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-  extend: {},
+  extend: {
+    colors: {
+      'bg-melo': '#252527',
+    },
+    fontFamily:{
+      sans: ['"Albert Sans"', 'sans-serif'],
+    }
+  },
   },
   plugins: [],
   

@@ -3,7 +3,7 @@ import {Routes, Route } from 'react-router-dom'
 import Ia from './pages/Ia'
 import MiEspacio from './pages/MiEspacio'
 import Notificaciones from './pages/Notificaciones'
-import Signin from './pages/Signin'
+import Login from './pages/Login'
 import Signup from './pages/Signup'
 
 import './App.css'
@@ -16,7 +16,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Ia />} />
       <Route path="/MiEspacio" element={<MiEspacio/>} />
-      <Route path="/Signin" element={<Signin/>} />
+      <Route path="/Login" element={<Login/>} />
       <Route path="/Signup" element={<Signup/>} />
       <Route path="/Notificaciones" element={<Notificaciones/>} />
     </Routes>

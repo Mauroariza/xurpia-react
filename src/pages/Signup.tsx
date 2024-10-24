@@ -42,7 +42,7 @@ export default function Signup() {
         type="submit" 
         className="w-full bg-zinc-700 text-white py-2 rounded-lg hover:bg-zinc-600 transition-colors duration-300"
       >
-        Registrarse
+        Iniciar Sesión
       </button>
     </form>
   </div>

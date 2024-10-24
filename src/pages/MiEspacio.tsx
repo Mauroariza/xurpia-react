@@ -7,25 +7,25 @@ export default function MiEspacio() {
         <button id="menuToggle" className="text-2xl">
           <i className="bx bx-menu" />
         </button>
-        <div className="search flex items-center bg-zinc-800 p-2 rounded">
+        <div className="search flex w-full max-w-lg items-center bg-zinc-800 p-4 rounded">
           <i className="bx bx-search text-xl mr-2" />
           <input
             type="text"
             placeholder="Buscar por trabajos o compañias"
-            className="bg-transparent outline-none text-white"
+            className="bg-transparent outline-none text-white w-full"
           />
-        </div>
-        <div className="city flex items-center bg-zinc-800 p-2 rounded ml-4">
+          </div>
+          <div className="city flex w-full max-w-lg items-center bg-zinc-800 p-4 rounded ml-4">
           <i className="bx bxs-location-plus text-xl mr-2" />
           <input
             type="text"
             placeholder="Ingresa ciudad, estado, o región"
-            className="bg-transparent outline-none text-white"
+            className="bg-transparent outline-none text-white w-full"
           />
-        </div>
-        <button className="ml-4 bg-zinc-800 py-2 px-4 rounded hover:bg-zinc-700">
+          </div>
+          <button className="ml-4 bg-zinc-800 py-4 px-6 rounded hover:bg-zinc-700">
           Buscar
-        </button>
+          </button>
         <i className="bx bx-bell text-2xl ml-4" />
         <div className="user-info flex items-center ml-4">
           <img src="../IMG/david.jpg" alt="David Campiño" className="w-10 h-10 rounded-full" />

@@ -1,7 +1,7 @@
 import instance from "./axios";
 
 export interface LoginData {
-    usuario: string;
+    correo: string;
     contraseña: string;
 }
 export interface User{
