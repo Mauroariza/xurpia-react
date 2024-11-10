@@ -1,42 +1,44 @@
+import '@fontsource/albert-sans'; // Importa la fuente normal
+import '@fontsource/albert-sans/400.css'; 
+import '@fontsource/albert-sans/500.css';
+import '@fontsource/albert-sans/600.css';
+import '@fontsource/albert-sans/700.css';
 
 
 export default function MiEspacio() {
+  
   return (
-    <div className="container mx-auto p-4 bg-zinc-900 text-white">
+    <div className="font-albert container mx-auto p-4 text-white">
       <div className="nav flex items-center justify-between mb-4">
-        <button id="menuToggle" className="text-2xl">
-          <i className="bx bx-menu" />
-        </button>
-        <div className="search flex w-full max-w-lg items-center bg-zinc-800 p-4 rounded">
-          <i className="bx bx-search text-xl mr-2" />
-          <input
-            type="text"
-            placeholder="Buscar por trabajos o compañias"
-            className="bg-transparent outline-none text-white w-full"
-          />
-          </div>
-          <div className="city flex w-full max-w-lg items-center bg-zinc-800 p-4 rounded ml-4">
-          <i className="bx bxs-location-plus text-xl mr-2" />
-          <input
-            type="text"
-            placeholder="Ingresa ciudad, estado, o región"
-            className="bg-transparent outline-none text-white w-full"
-          />
-          </div>
-          <button className="ml-4 bg-zinc-800 py-4 px-6 rounded hover:bg-zinc-700">
-          Buscar
-          </button>
-        <i className="bx bx-bell text-2xl ml-4" />
-        <div className="user-info flex items-center ml-4">
-          <img src="../IMG/david.jpg" alt="David Campiño" className="w-10 h-10 rounded-full" />
-          <div className="ml-2">
-            <a href="#" className="block">
-              David Campiño <i className="bx bx-chevron-down" />
-            </a>
-            <p className="text-sm">josedavid4049@gmail.com</p>
-          </div>
+  
+        <div className="font-bold search flex w-full max-w-lg bg-[#343434] p-4 rounded-xl mr-5">
+          <i className="bx bx-search text-xl mr-4" />
+            <input
+              type="text"
+              placeholder="Buscar por trabajos o compañias"
+              className="bg-transparent outline-none text-white w-full"
+            />
         </div>
+
+        <div className="font-bold city flex w-full max-w-lg items-center bg-[#343434] p-4 rounded-xl mr-5">
+          <i className="bx bxs-location-plus text-xl mr-4" />
+            <input
+              type="text"
+              placeholder="Ingresa ciudad, estado, o región"
+              className="bg-transparent outline-none text-white w-full"
+            />
+        </div>
+
+        <button className="font-bold ml-auto bg-[#000000] py-4 px-6 rounded-xl hover:bg-zinc-700">
+          Buscar
+        </button>
+
+        <button className="font-bold ml-auto bg-[#000000] py-4 px-6 rounded-xl hover:bg-zinc-700">
+          <i src='https://img.icons8.com/?size=100&id=eMfeVHKyTnkc&format=png&color=000000'></i>
+        </button>
+
       </div>
+
       <div className="main">
         <div className="content">
           <div className="header mb-4">

@@ -1,19 +1,15 @@
+/** @type {import('tailwindcss').Config} */
 export default {
-
   content: [
-  "./index.html",
-  "./src/**/*.{js,ts,jsx,tsx}",
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-  extend: {
-    colors: {
-      'bg-melo': '#252527',
+    extend: {
+      fontFamily: {
+        albert: ['"Albert Sans"', 'sans-serif'],
+      },
     },
-    fontFamily:{
-      sans: ['"Albert Sans"', 'sans-serif'],
-    }
-  },
   },
   plugins: [],
-  
-  }
+};

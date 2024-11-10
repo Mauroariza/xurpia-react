@@ -15,7 +15,7 @@ const Components: ComponentMap = {
   Signup: Signup,
 };
 
-function Ia() {
+function NavBar() {
   const [componentToShow, setComponentToShow] = useState<keyof typeof Components>('MiEspacio');
   const [showNotificacionesPopup, setShowNotificacionesPopup] = useState(false);
 
@@ -31,24 +31,41 @@ function Ia() {
   const Component = Components[componentToShow];
 
   return (
-    <div className="flex h-screen bg-slate-950  text-white">
+    <div className="flex h-screen bg-[#252527]  text-white">
       {/* Barra lateral */}
       <div className="w-1/5 bg-black p-4 flex flex-col justify-between">
         <div>
-          <a href="#" className="text-2xl font-bold mb-8 block">XURP IA</a>
+          <a href="#" className="text-4xl font-bold font-sans text-green-400 mb-8 block text-center transform translate-y-4">XURP IA</a>
           <div className="side-nav mb-8">
+
             <div className="item mb-4">
-              <a href="#" className="flex items-center py-2 px-4 hover:bg-zinc-800 rounded" onClick={() => handleComponentChange('MiEspacio')}>
+              <a href="#" className="flex items-center py-2 px-4 hover:bg-zinc-800 rounded" >
                 <i className="bx bx-home-alt mr-2" />
-                Mi Espacio
+                Inicio
               </a>
             </div>
+
+            <div className="item mb-4">
+              <a href="#" className="flex items-center py-2 px-4 hover:bg-zinc-800 rounded" onClick={() => handleComponentChange('MiEspacio')}>
+                <i className="bx bx-bell mr-2" />
+                Notas
+              </a>
+            </div>
+
             <div className="item mb-4">
               <a href="#" className="flex items-center py-2 px-4 hover:bg-zinc-800 rounded" onClick={toggleNotificacionesPopup}>
                 <i className="bx bx-bell mr-2" />
                 Notificaciones
               </a>
             </div>
+
+            <div className="item mb-4">
+              <a href="#" className="flex items-center py-2 px-4 hover:bg-zinc-800 rounded" onClick={toggleNotificacionesPopup}>
+                <i className="bx bx-bell mr-2" />
+                Configuración
+              </a>
+            </div>
+
           </div>
         </div>
         
@@ -65,20 +82,7 @@ function Ia() {
 
       {/* Panel principal */}
       <div className="flex-1 p-8">
-        {/* Barra de búsqueda */}
-        <div className="flex justify-between mb-6">
-          <input
-            type="text"
-            placeholder="Buscar por trabajos o compañías"
-            className="w-2/5 bg-neutral-700 text-white py-2 px-4 rounded-lg focus:outline-none"
-          />
-          <input
-            type="text"
-            placeholder="Ingresar ciudad, estado o región"
-            className="w-2/5 bg-neutral-700 text-white py-2 px-4 rounded-lg focus:outline-none"
-          />
-          <button className="bg-neutral-700 px-6 py-2 rounded-lg hover:bg-zinc-800">Buscar</button>
-        </div>
+        
 
         {/* Componente dinámico */}
         <Component />
@@ -103,4 +107,4 @@ function Ia() {
   );
 }
 
-export default Ia;
+export default NavBar;
