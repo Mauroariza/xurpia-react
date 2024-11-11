@@ -9,7 +9,7 @@ import '@fontsource/albert-sans/700.css';
 export default function Home() {
   
   return (
-    <div className="font-albert container mx-auto p-4 text-white">
+    <div className="font-albert container mx-auto p-4 bg-[#252527] text-white">
       <div className="nav flex items-center justify-between mb-5">
   
         <div className="font-bold search flex w-full max-w-lg bg-[#343434] p-4 rounded-xl mr-3">
