@@ -1,21 +1,24 @@
 
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-
-interface MyComponentProps {
-  title: string;
-  subtitle?: string; 
-}
-
-
-const MyComponent: React.FC<MyComponentProps> = ({ title, subtitle }) => {
+function Notes () {
+  const navigate = useNavigate();
+  const goToSomeRoute = () => {
+    navigate('/');  // Redirige a la ruta "/some-route"
+  };
   return (
-    <div className="container">
-      <h1>{title}</h1>
-      {subtitle && <h2>{subtitle}</h2>}
+    <div>
+      <h1>Notes</h1>
+      <div
+        className="note-item"
+        onClick={goToSomeRoute}
+        style={{ padding: '20px', margin: '10px', background: '#000000', cursor: 'pointer' }}
+      >
+        Go to Some Route
+      </div>
     </div>
+  
   );
-};
-
-
-export default MyComponent;
+}
+export default Notes;

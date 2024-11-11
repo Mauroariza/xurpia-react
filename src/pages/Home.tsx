@@ -5,13 +5,14 @@ import '@fontsource/albert-sans/600.css';
 import '@fontsource/albert-sans/700.css';
 
 
-export default function MiEspacio() {
+
+export default function Home() {
   
   return (
     <div className="font-albert container mx-auto p-4 text-white">
-      <div className="nav flex items-center justify-between mb-4">
+      <div className="nav flex items-center justify-between mb-5">
   
-        <div className="font-bold search flex w-full max-w-lg bg-[#343434] p-4 rounded-xl mr-5">
+        <div className="font-bold search flex w-full max-w-lg bg-[#343434] p-4 rounded-xl mr-3">
           <i className="bx bx-search text-xl mr-4" />
             <input
               type="text"
@@ -20,8 +21,8 @@ export default function MiEspacio() {
             />
         </div>
 
-        <div className="font-bold city flex w-full max-w-lg items-center bg-[#343434] p-4 rounded-xl mr-5">
-          <i className="bx bxs-location-plus text-xl mr-4" />
+        <div className="font-bold city flex w-full max-w-lg items-center bg-[#343434] p-4 rounded-xl ml-5 mr-2">
+          <i className="bx bxs-location-plus text-xl mr-5" />
             <input
               type="text"
               placeholder="Ingresa ciudad, estado, o región"
@@ -29,18 +30,29 @@ export default function MiEspacio() {
             />
         </div>
 
-        <button className="font-bold ml-auto bg-[#000000] py-4 px-6 rounded-xl hover:bg-zinc-700">
+        <button className="font-bold ml-10 bg-[#000000] py-4 px-6 rounded-xl hover:bg-zinc-700">
           Buscar
         </button>
 
-        <button className="font-bold ml-auto bg-[#000000] py-4 px-6 rounded-xl hover:bg-zinc-700">
-          <i src='https://img.icons8.com/?size=100&id=eMfeVHKyTnkc&format=png&color=000000'></i>
+        <button className="font-bold ml-auto bg-[#000000] py-4 px-6 rounded-xl hover:bg-zinc-700" >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+          >
+          <path fill="none" d="M0 0h24v24H0z"></path>
+            <path
+              fill="currentColor"
+              d="M20 17h2v2H2v-2h2v-7a8 8 0 1 1 16 0v7zm-2 0v-7a6 6 0 1 0-12 0v7h12zm-9 4h6v2H9v-2z"
+            ></path>
+          </svg> 
         </button>
 
       </div>
 
       <div className="main">
-        <div className="content">
+        <div className="content mt-20">
           <div className="header mb-4">
             <h4 className="text-2xl font-bold">Grupos</h4>
             <p className="text-gray-400">Aquí estarán tus grupos de trabajo</p>
