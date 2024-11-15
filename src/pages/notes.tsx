@@ -1,5 +1,4 @@
 
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function Notes () {
@@ -22,3 +21,4 @@ function Notes () {
   );
 }
 export default Notes;
+//mejorar la navegación con el hook useNavigate de React Router

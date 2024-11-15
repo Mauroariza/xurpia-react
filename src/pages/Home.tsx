@@ -1,54 +1,28 @@
-import '@fontsource/albert-sans'; // Importa la fuente normal
-import '@fontsource/albert-sans/400.css'; 
-import '@fontsource/albert-sans/500.css';
-import '@fontsource/albert-sans/600.css';
-import '@fontsource/albert-sans/700.css';
-
-
-
 export default function Home() {
-  
   return (
-    <div className="font-albert container mx-auto p-4 bg-[#252527] text-white">
-      <div className="nav flex items-center justify-between mb-5">
-  
+    <div className="dad font-albert container mx-auto p-4 text-white">
+      <div className="input-buscar nav flex items-center justify-between mb-5">
         <div className="font-bold search flex w-full max-w-lg bg-[#343434] p-4 rounded-xl mr-3">
           <i className="bx bx-search text-xl mr-4" />
-            <input
-              type="text"
-              placeholder="Buscar por trabajos o compañias"
-              className="bg-transparent outline-none text-white w-full"
-            />
+          <input
+            type="text"
+            placeholder="Buscar por trabajos o compañias"
+            className="bg-transparent outline-none text-white w-full"
+          />
         </div>
 
         <div className="font-bold city flex w-full max-w-lg items-center bg-[#343434] p-4 rounded-xl ml-5 mr-2">
           <i className="bx bxs-location-plus text-xl mr-5" />
-            <input
-              type="text"
-              placeholder="Ingresa ciudad, estado, o región"
-              className="bg-transparent outline-none text-white w-full"
-            />
+          <input
+            type="text"
+            placeholder="Ingresa ciudad, estado, o región"
+            className="bg-transparent outline-none text-white w-full"
+          />
         </div>
 
         <button className="font-bold ml-10 bg-[#000000] py-4 px-6 rounded-xl hover:bg-zinc-700">
           Buscar
         </button>
-
-        <button className="font-bold ml-auto bg-[#000000] py-4 px-6 rounded-xl hover:bg-zinc-700" >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width="24"
-            height="24"
-          >
-          <path fill="none" d="M0 0h24v24H0z"></path>
-            <path
-              fill="currentColor"
-              d="M20 17h2v2H2v-2h2v-7a8 8 0 1 1 16 0v7zm-2 0v-7a6 6 0 1 0-12 0v7h12zm-9 4h6v2H9v-2z"
-            ></path>
-          </svg> 
-        </button>
-
       </div>
 
       <div className="main">
@@ -82,6 +56,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
+
             <div className="card bg-zinc-800 p-4 rounded-lg shadow-lg">
               <div className="card-header flex items-center justify-between mb-4">
                 <div className="job-info flex items-center">
