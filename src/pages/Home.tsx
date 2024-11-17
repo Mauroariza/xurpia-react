@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="dad font-albert container mx-auto p-4 text-white">
+    <div className="dad font-albert container mx-auto  text-white">
       <div className="input-buscar nav flex items-center justify-between mb-5">
         <div className="font-bold search flex w-full max-w-lg bg-[#343434] p-4 rounded-xl mr-3">
           <i className="bx bx-search text-xl mr-4" />
@@ -20,7 +20,7 @@ export default function Home() {
           />
         </div>
 
-        <button className="font-bold ml-10 bg-[#000000] py-4 px-6 rounded-xl hover:bg-zinc-700">
+        <button className="font-bold ml-13 mr-12 bg-[#000000] py-4 px-6 rounded-xl hover:bg-[#4ade80]">
           Buscar
         </button>
       </div>

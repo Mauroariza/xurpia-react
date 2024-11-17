@@ -20,9 +20,10 @@ export const Layout = () => {
     <div className="flex bg-[#252527] h-screen">
       <SideBar />
       <div className="flex-1 flex flex-col">
-        <header className="p-4 flex justify-end">
-          <button 
-            className="text-white p-2 rounded-full hover:bg-zinc-700"
+
+        <header className="p-2 flex justify-end items-center relative">
+          <button
+            className="fixed top-4 right-2 bg-[#000000] text-white p-4 rounded-xl hover:bg-[#4ade80]"
             onClick={toggleNotificacionesPopup}
           >
             <svg
@@ -36,7 +37,7 @@ export const Layout = () => {
             </svg>
           </button>
           {showNotificacionesPopup && (
-            <div className="absolute top-16 right-4 w-80 bg-zinc-800 p-4 rounded-lg shadow-lg z-50">
+            <div className="fixed top-12 right-4 w-80 bg-zinc-800 p-4 rounded-lg shadow-lg z-50">
               <div className="flex justify-between items-center mb-2">
                 <h3 className="text-xl text-white">Notificaciones</h3>
                 <button
@@ -50,6 +51,8 @@ export const Layout = () => {
             </div>
           )}
         </header>
+
+
         <main className="flex-1 overflow-y-auto">
           <Outlet />
         </main>
