@@ -1,8 +1,8 @@
-import { Outlet } from 'react-router-dom';
+
 import SideBar from './SideBar';
 import Notificaciones from './Notificaciones';
 import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation,Outlet } from 'react-router-dom';
 
 export const Layout = () => {
   const [showNotificacionesPopup, setShowNotificacionesPopup] = useState(false);

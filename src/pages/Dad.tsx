@@ -1,4 +1,4 @@
-import React from 'react';
+
 import '@fontsource/albert-sans';
 import '@fontsource/albert-sans/400.css';
 import '@fontsource/albert-sans/500.css';
@@ -6,7 +6,7 @@ import '@fontsource/albert-sans/600.css';
 import '@fontsource/albert-sans/700.css';
 
 import SideBar from './SideBar';
-import Home from './Home';
+
 
 const Dad = () => {
   return (
