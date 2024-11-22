@@ -22,7 +22,7 @@ const Notes = () => {
       texto: 'El proyecto se debe de entregar para el 1 de Noviembre, dando información sobre el Diagrama de Flujo, BD y todo lo aprendido en clase.',
       completado: false,
     },
-  ]);
+    ]);
 
   const [editingId, setEditingId] = useState(null);
   const [newText, setNewText] = useState('');

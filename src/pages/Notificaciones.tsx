@@ -1,6 +1,6 @@
 const Notificaciones = () => {
   return (
-    <div className=" rounded-lg shadow-lg p-4 max-w-sm w-full text-sm">
+    <div className="rounded-lg shadow-lg p-4 max-w-sm w-full text-sm">
       <ul className="space-y-2">
         <li className="flex items-center justify-between p-3 rounded-lg hover:bg-[#3c3f45] transition duration-200 cursor-pointer">
           <div className="flex items-center space-x-3">

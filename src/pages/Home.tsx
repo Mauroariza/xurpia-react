@@ -1,3 +1,7 @@
+import { NavLink } from "react-router-dom";
+
+
+
 export default function Home() {
   return (
     <div className="dad font-albert container mx-auto  text-white">
@@ -30,61 +34,48 @@ export default function Home() {
           <div className="header mb-4">
             <h4 className="text-2xl font-bold">Grupos</h4>
             <p className="text-gray-400">Aquí estarán tus grupos de trabajo</p>
+            <div className="flex justify-end p-2z">
+            <NavLink to="/AddProject">
+            <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 inline-block mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+              </svg>
+              Nuevo Proyecto
+            </button>
+            </NavLink>
+            
+            </div>
           </div>
-          <div className="job-cards grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="card bg-zinc-800 p-4 rounded-lg shadow-lg">
-              <div className="card-header flex items-center justify-between mb-4">
-                <div className="job-info flex items-center">
-                  <img className="logoEmpresas w-12 h-12 rounded-full mr-4" src="../IMG/LOGOCHIQUITO.png" alt="Heeq" />
-                  <div>
-                    <h5 className="text-xl font-semibold">
-                      Heeq <span className="text-gray-400 text-sm">| Última conexión hace 2h</span>
-                    </h5>
-                    <a href="#" className="text-teal-500 hover:underline">Entrar</a>
-                    <p className="text-gray-400">Cali, Colombia</p>
-                  </div>
-                </div>
-                <i className="bx bx-bookmark-plus text-2xl" />
-              </div>
-              <div className="card-tags mb-4">
-                <a href="#" className="bg-zinc-700 py-1 px-2 rounded mr-2">Empresa</a>
-                <a href="#" className="bg-zinc-700 py-1 px-2 rounded">Principal</a>
-              </div>
-              <div className="card-desc">
-                <p className="text-gray-300">
-                  Heeq es una empresa de tecnología que ofrece soluciones de software y hardware.
-                </p>
-              </div>
-            </div>
 
-            <div className="card bg-zinc-800 p-4 rounded-lg shadow-lg">
-              <div className="card-header flex items-center justify-between mb-4">
-                <div className="job-info flex items-center">
-                  <img src="../IMG/icono.png" className="logoEmpresas w-12 h-12 rounded-full mr-4" alt="XURP IA" />
-                  <div>
-                    <h5 className="text-xl font-semibold">
-                      XURP IA <span className="text-gray-400 text-sm">| Última conexión hace 2min</span>
-                    </h5>
-                    <a href="#" className="text-teal-500 hover:underline">Entrar</a>
-                    <p className="text-gray-400">Cali, Colombia</p>
-                  </div>
+          
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"> 
+            <div className="bg-[#343434] text-white rounded-lg shadow-md p-6">
+                <div className="flex items-center">
+                    <div className="flex-shrink-0">
+                        <img className="h-12 w-12" src="heeq-logo.png" alt="Logo de Heeq" />
+                    </div>
+                    <div className="ml-4">
+                        <h2 className="text-lg font-bold">Heeq</h2>
+                        <p className="text-sm">Última conexión hace 2h</p>
+                        <p className="text-sm">Cali, Colombia</p>
+                        <p className="text-sm">Cantidad de integrantes: 10</p>
+                    </div>
                 </div>
-                <i className="bx bx-bookmark-plus text-2xl" />
-              </div>
-              <div className="card-tags mb-4">
-                <a href="#" className="bg-zinc-700 py-1 px-2 rounded mr-2">Empresa</a>
-                <a href="#" className="bg-zinc-700 py-1 px-2 rounded mr-2">IA</a>
-                <a href="#" className="bg-zinc-700 py-1 px-2 rounded">Chat</a>
-              </div>
-              <div className="card-desc">
-                <p className="text-gray-300">
-                  Xurp IA es un invento tecnológico el cuál implementa una Inteligencia Artificial que la puedes utilizar mientras programas en equipo.
-                </p>
-              </div>
+                <p className="mt-4">Heeq es una empresa de tecnología que ofrece soluciones de software y hardware, donde trabajamos para darte un excelente servicio y amabilidad al cliente.</p>
+                <button className="bg-[white]  text-black font-bold py-2 px-4 rounded mt-4">
+                    Entrar
+                </button>
             </div>
+        </div>
+    </div>
+
+          
+    
+
+            
           </div>
         </div>
       </div>
-    </div>
   );
 }

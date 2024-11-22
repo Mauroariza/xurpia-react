@@ -23,7 +23,7 @@ export const Layout = () => {
 
         <header className="p-2 flex justify-end items-center relative">
           <button
-            className="fixed top-4 right-2 bg-[#000000] text-white p-4 rounded-xl hover:bg-[#4ade80]"
+            className="fixed top-4 right-6 bg-[#000000] text-white p-4 rounded-xl hover:bg-[#4ade80]"
             onClick={toggleNotificacionesPopup}
           >
             <svg
