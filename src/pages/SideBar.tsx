@@ -29,7 +29,7 @@ function SideBar() {
             </div>
 
             <div className="NOTAS mt-3 mb-4">
-              <NavLink to="Notes" className="flex items-center py-2 px-4 rounded">
+              <NavLink to="/Notes" className="flex items-center py-2 px-4 rounded">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="35"
